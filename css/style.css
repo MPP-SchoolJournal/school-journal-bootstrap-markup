@@ -66,9 +66,15 @@ a:hover {
 }
 .mark-input.control-mark {
   background-color: red;
+  color: #fff;
 }
 .mark-input.self-work-mark {
   background-color: dodgerblue;
+  color: #fff;
+}
+.mark-input.absent {
+  background-color: lightgray;
+  color: #fff;
 }
 .section-marks {
   padding: 10px;
@@ -85,4 +91,21 @@ a:hover {
 }
 .marks a:hover {
   text-decoration: none;
+}
+.context-menu-marks-type {
+  position: fixed;
+  display: none;
+  width: 4%;
+  height: auto;
+  z-index: 1;
+  border: 1px solid #eee;
+}
+.context-menu-item:hover {
+  background: #eee;
+}
+.context-menu-item {
+  cursor: pointer;
+  list-style: none;
+  background: #fff;
+  margin: 0;
 }
