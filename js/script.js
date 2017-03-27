@@ -2,6 +2,7 @@ $(document).ready(function() {
     const $contextMenuMarksType = $('.context-menu-marks-type');
 
     var $selectedMarkInput;
+    var hidingTimeout;
 
     $('.mark-input').on('contextmenu', function(e) {
         e.preventDefault();
@@ -11,14 +12,16 @@ $(document).ready(function() {
         showContextMenuMarksType($selectedMarkInput);
     });
 
-    $('.context-menu-item a').on('blur', function() {
-        hideContextMenuMarksType();
+    $contextMenuMarksType.on('blur', function() {
+        if ($contextMenuMarksType[0].contains($(document.activeElement)[0])) {
+            hideContextMenuMarksType();
+        }
     });
 
     function showContextMenuMarksType($markInput) {
         $markInput.after($contextMenuMarksType);
         $contextMenuMarksType.show();
-        $('.context-menu-item a')[0].focus();
+        $contextMenuMarksType[0].focus();
     }
 
     function hideContextMenuMarksType() {

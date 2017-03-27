@@ -43,12 +43,19 @@
             <div class="col-md-12 col-md-offset-0">
                 <h1>Геометрия</h1>
                 <p style="font-size: 0.9em;">Петрова Галина Стапановна</p>
-                <a class="btn btn-success">Новая четверть</a>
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-info">.PDF</button>
-                    <button type="button" class="btn btn-info">.CSV</button>
-                    <button type="button" class="btn btn-info">.XLSX</button>
-                </div><br><br>
+                <div class="actions">
+                    <div>
+                        <a class="btn btn-success">Новая четверть</a>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-info">.PDF</button>
+                            <button type="button" class="btn btn-info">.CSV</button>
+                            <button type="button" class="btn btn-info">.XLSX</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-success">Новое занятие</button>
+                    </div>
+                </div><br>
                 <table class="table table-bordered marks">
                     <thead>
                         <tr>
@@ -148,11 +155,11 @@
     <p class="text-center"><strong>Школьный Журнал</strong> 2017 &middot; СПП</p>
 </footer>
 
-<div class="context-menu-marks-type">
+<div class="context-menu-marks-type" tabindex="-2">
     <table>
-        <tr><td class="context-menu-item" data-type="control-mark"><a href="#">Контрольная</a></td></tr>
-        <tr><td class="context-menu-item" data-type="self-work-mark"><a href="#">Самостоятельная</a></td></tr>
         <tr><td class="context-menu-item" data-type="absent"><a href="#">Отсутствие</a></td></tr>
+        <tr><td class="context-menu-item" data-type="self-work-mark"><a href="#">Самостоятельная</a></td></tr>
+        <tr><td class="context-menu-item" data-type="control-mark"><a href="#">Контрольная</a></td></tr>
     </table>
 </div>
 

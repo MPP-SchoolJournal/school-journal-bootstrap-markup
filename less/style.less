@@ -118,10 +118,10 @@ a:hover {
 .context-menu-marks-type {
   position: fixed;
   display: none;
-  width: 4%;
   height: auto;
   z-index: 1;
-  border: 1px solid #eee;
+  border: 2px solid #8c8c8c;
+  outline: none;
 }
 
 .context-menu-item:hover {
@@ -133,4 +133,15 @@ a:hover {
   list-style: none;
   background: #fff;
   margin: 0;
+
+  a:focus, a:hover {
+    text-decoration: none;
+    border: 0;
+    outline: none;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
 }
